@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/linlay">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/_3172044000" />
+
+        <TextView
+            android:id="@+id/edTitulo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="
+            Sistema de Cadastros"
+            android:textAlignment="center"
+            android:textSize="35dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linlay"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Bem vindo ao sistema de cadastro!"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ed2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed1"
+        android:text="Esse é um pequeno software de cadastro de usuários"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ed3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed2"
+        android:text="Escolha uma das opções abaixo:"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar novo usuário"
+        android:layout_below="@id/ed3"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+    <Button
+        android:id="@+id/btLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listar usuários cadastrados"
+        android:layout_below="@id/btCadastro"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+
+</RelativeLayout>

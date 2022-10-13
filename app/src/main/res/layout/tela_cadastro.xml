@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/linlay2">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/_3172044000" />
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="
+            Sistema de Cadastros"
+            android:textAlignment="center"
+            android:textSize="35dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linlay2"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Preencha os dados abaixo:"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:layout_below="@id/txtDados"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Digite seu nome..."
+        android:layout_below="@id/txtNome"/>
+
+    <TextView
+        android:id="@+id/txtEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Endereço:"
+        android:layout_below="@id/edNome"
+        android:padding="10dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Digite seu endereço..."
+        android:layout_below="@id/txtEndereco"/>
+
+    <TextView
+        android:id="@+id/txtFone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefone:"
+        android:layout_below="@id/edEndereco"
+        android:padding="10dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edFone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Digite seu telefone..."
+        android:layout_below="@id/txtFone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/edFone"
+        android:id="@+id/linlay3"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <Button
+            android:id="@+id/btSalvar"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Salvar"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/btCancelar"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"/>
+    </LinearLayout>
+
+</RelativeLayout>
